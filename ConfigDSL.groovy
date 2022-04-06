@@ -8,8 +8,8 @@ job('Avanzado-job-DSL') {
     	} 
   	parameters {
                 stringParam('nombre', defaultValue = 'Luis', description = 'Parametro de cadena para el Job Estudiante')
-                stringParam('n1', defaultValue = '0', description = 'Parametro de cadena para el numero 1')
-                stringParam('n2', defaultValue = '0', description = 'Parametro de cadena para el numero 2')
+                stringParam('n1', defaultValue = '1', description = 'Parametro de cadena para el numero 1')
+                stringParam('n2', defaultValue = '1', description = 'Parametro de cadena para el numero 2')
       		choiceParam('materia', ['Aritmetica', 'Operaciones Basicas'])
                 choiceParam('idioma', ['Español', 'Ingles', 'Japones', 'Latin', 'Frances'])
       		booleanParam('Estudiante_Avanzado', false)
