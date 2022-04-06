@@ -16,12 +16,14 @@ job('Avanzado-job-DSL') {
     	}
   	triggers {
     		cron('H/7 * * * *')
+		githubPush()
     	}
   	steps {
     		shell("bash Estudiante_Avanzado.sh")
     	}
   	publishers {
       		mailer('luisgjenkins@gmail.com', true, true)
+		mailer('desarprac@gmail.com', true, true)
       		slackNotifier {
 		        notifyAborted(true)
 		        notifyEveryFailure(true)
