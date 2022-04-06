@@ -10,16 +10,16 @@ do
 done
 if [ "$invertir" = "true" ]
 then
-	  sleep 
-    echo "************************"
+	sleep 2
+    	echo "************************"
     
-    echo "Invertiremos los valores"
-    echo "La tabla del" $n2 " hasta el " $n1
-    for ((i=1; i<n1+1;i++))
-    do
-    	  mult=$(($n2*$i))
-        echo "$n2 x $i = $mult"
-    done
+    	echo "Invertiremos los valores"
+    	echo "La tabla del" $n2 " hasta el " $n1
+    	for ((i=1; i<n1+1;i++))
+    	do
+    	  	mult=$(($n2*$i))
+        	echo "$n2 x $i = $mult"
+    	done
     
 fi
 sleep 2
