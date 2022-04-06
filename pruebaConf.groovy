@@ -1,4 +1,4 @@
-job('prueba-job-DSL') {
+job('pruebatorres-job-DSL') {
   description('Job DSL de ejemplo para el curso de Jenkins')
   scm {
         git('https://github.com/LuisRuizLemas/Job-In-Team.git', 'main') { node ->
@@ -14,7 +14,7 @@ job('prueba-job-DSL') {
   
   triggers{
     cron('H/7 * * * *')
-   
+    githubPush()
   }
   steps{
     shell("bash prueba.sh")
