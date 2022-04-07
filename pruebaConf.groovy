@@ -3,7 +3,7 @@ job('pruebatorres-job-DSL') {
   scm {
         git('https://github.com/LuisRuizLemas/Job-In-Team.git', 'main') { node ->
           node / gitConfigName('LuisRuizLemas')
-          node / gitConfigEmail('desarprac@gmail.com')
+          node / gitConfigEmail('desarprac@gmail.com', 'luisgjenkins@gmail.com')
         }
   }
   parameters {
