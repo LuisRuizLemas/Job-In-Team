@@ -17,7 +17,7 @@ job('pruebatorres-job-DSL') {
     githubPush()
   }
   steps{
-    shell(" prueba.sh")
+    shell("bash prueba.sh")
   }
   publishers {
     mailer('desarprac@gmail.com', true, true)
