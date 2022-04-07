@@ -1,4 +1,4 @@
-job('pruebatorres-job-DSL') {
+job('test-job-DSL') {
   description('Job DSL de ejemplo para el curso de Jenkins')
   scm {
         git('https://github.com/LuisRuizLemas/Job-In-Team.git', 'main') { node ->
